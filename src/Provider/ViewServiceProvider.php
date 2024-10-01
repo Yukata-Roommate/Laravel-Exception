@@ -19,11 +19,11 @@ class ViewServiceProvider extends BaseServiceProvider
     protected string $basePath = __DIR__;
 
     /**
-     * get path and namespace pairs
+     * get views
      * 
      * @return array<string, string>
      */
-    protected function pairs(): array
+    protected function views(): array
     {
         return [
             "views" => "YR::Exception"
