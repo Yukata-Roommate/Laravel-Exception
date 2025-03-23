@@ -1,0 +1,41 @@
+{
+    "name": "yukata-roommate/laravel-exception",
+    "description": "Easy to handle exception in Laravel",
+    "version": "1.0.0",
+    "keywords": [
+        "yukata-roommate",
+        "php",
+        "laravel",
+        "package",
+        "exception",
+        "laravel-exception"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yukata Roommate"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "YukataRm\\Laravel\\Exception\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YukataRm\\Laravel\\Exception\\ServiceProvider"
+            ],
+            "aliases": {
+                "Exception": "YukataRm\\Laravel\\Exception\\Facades\\Exception"
+            }
+        }
+    },
+    "require": {
+        "php": ">=8.3.0",
+        "laravel/framework": "^11.0 || ^12.0",
+        "yukata-roommate/laravel-command": "^1.0.0",
+        "yukata-roommate/laravel-log": "^1.0.0",
+        "yukata-roommate/laravel-mail": "^1.0.0"
+    }
+}
